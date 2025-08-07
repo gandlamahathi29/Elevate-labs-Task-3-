@@ -1,15 +1,18 @@
-# Elevate-labs-Task-3-
-🚀 Task 3 - Infrastructure as Code (IaC) with Terraform
-📌 Description
-This task demonstrates how to provision and manage a Docker container using Terraform, showcasing the concept of Infrastructure as Code (IaC). We use the Docker provider to pull an image (nginx:latest) and run it as a container on a local EC2 instance.
+# Terraform Docker Task
 
-🎯 Objective
-To automate the provisioning of a local Docker container using Terraform.
+## Description
+This project provisions a Docker container using Terraform with Nginx image.
 
-🔧 Tools & Technologies
-🐳 Docker
-🛠️ Terraform
-☁️ AWS EC2 (Amazon Linux or Ubuntu)
-🔗 GitHub
-📁 Project Structure
-task3/ ├── main.tf # Terraform configuration ├── README.md # Documentation └── execution_log.txt # (Optional) Terraform output logs
+## Steps Followed:
+1. Wrote Terraform code in `main.tf`
+2. Ran `terraform init`, `plan`, `apply`
+3. Verified container running on localhost:8080
+4. Destroyed the setup using `terraform destroy`
+
+## Requirements:
+- Docker
+- Terraform
+
+## Result:
+A Docker container named `nginx_web` was created and served the Nginx default page on port 8080.
+
